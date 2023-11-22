@@ -1,0 +1,20 @@
+﻿<h3>Xin chào đây là chương trình truyền tải những thông điệp vui vẻ</h3>
+@{
+    List<string> names = ViewData["name"] as List<string>;
+}
+<h5>Dữ liệu từ Viubec</h5>
+@{
+    foreach (var item in ViewBag.Marks)
+    {
+        <p>@item</p>
+    }
+}
+<h5>Dữ liệu từ Viudaytor</h5>
+@{
+    foreach (var item in names)
+    {
+        <p>@item</p>
+    }
+}
+
+<h4>Dữ liệu từ Session @ViewData["SessionData"]</h4>
